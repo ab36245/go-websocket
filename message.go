@@ -1,6 +1,6 @@
 package websocket
 
-import "github.com/aivoicesystems/aivoice/common/writer"
+import "github.com/ab36245/go-writer"
 
 type Message struct {
 	Kind MessageKind

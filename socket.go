@@ -5,9 +5,9 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/aivoicesystems/aivoice/common/stream"
-
 	"github.com/gorilla/websocket"
+
+	"github.com/ab36245/go-stream"
 )
 
 type Socket struct {

@@ -1,0 +1,8 @@
+github.com/ab36245/go-errors v0.0.1 h1:UvTJTBoIz/Jw4X79MzgrySjsWB58Wba42Fg2/hwGKKI=
+github.com/ab36245/go-errors v0.0.1/go.mod h1:IB0dPwiePZSG3RWF4M8VTry+eRiq2g0Qjgk3TxHeB6U=
+github.com/ab36245/go-stream v0.0.1 h1:f5Z1ryL5KmSdda/2VCiIvQa/tW+5hke+Eq8BzcfHO6o=
+github.com/ab36245/go-stream v0.0.1/go.mod h1:xp1WQNei6ISn9sjF7mFYJGvhSXgUxDykYS5+AlUlS3Q=
+github.com/ab36245/go-writer v0.0.1 h1:NoFpWAlHVZlcYKR7pULYKkfvUfGY/31Xue9hwWtXyj0=
+github.com/ab36245/go-writer v0.0.1/go.mod h1:AJ9VRnafcpuTafNdbRyZu/1cZ7Xh4wWgp+GN9jB7aKk=
+github.com/gorilla/websocket v1.5.3 h1:saDtZ6Pbx/0u+bgYQ3q96pZgCzfhKXGPqt7kZ72aNNg=
+github.com/gorilla/websocket v1.5.3/go.mod h1:YR8l580nyteQvAITg2hZ9XVh4b55+EU/adAjf1fMHhE=
