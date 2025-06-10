@@ -1,6 +1,10 @@
 package websocket
 
-import "github.com/ab36245/go-writer"
+import (
+	"fmt"
+
+	"github.com/ab36245/go-writer"
+)
 
 type Message struct {
 	Kind MessageKind
@@ -37,3 +41,22 @@ const (
 	PingMessage    MessageKind = 9
 	PongMessage    MessageKind = 10
 )
+
+func (k MessageKind) String() string {
+	switch k {
+	case InvalidMessage:
+		return "invalid"
+	case TextMessage:
+		return "text"
+	case BinaryMessage:
+		return "binary"
+	case CloseMessage:
+		return "close"
+	case PingMessage:
+		return "ping"
+	case PongMessage:
+		return "pong"
+	default:
+		return fmt.Sprintf("unknown (%d)", k)
+	}
+}
