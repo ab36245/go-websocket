@@ -2,8 +2,6 @@ package websocket
 
 import (
 	"fmt"
-
-	"github.com/ab36245/go-writer"
 )
 
 type Message struct {
@@ -28,7 +26,7 @@ func (m Message) Text() string {
 }
 
 func (m Message) String() string {
-	return writer.Value(m)
+	return fmt.Sprintf("%s (%d bytes)", m.Kind, m.Data)
 }
 
 type MessageKind int
