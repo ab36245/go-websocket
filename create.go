@@ -1,6 +1,7 @@
 package websocket
 
 import (
+	"fmt"
 	"net/http"
 
 	"github.com/gorilla/websocket"
@@ -25,4 +26,11 @@ func Upgrade(w http.ResponseWriter, r *http.Request) (Socket, error) {
 		return Socket{}, UpgradeError.Wrap(err)
 	}
 	return Socket{conn}, nil
+}
+
+func checkOrigin(r *http.Request) bool {
+	// TODO: this is a hack to allow web connections until I work out Origin
+	// issues
+	fmt.Printf("Horrible hack in CheckOrigin in websocket upgrade must be removed!!!\n")
+	return true
 }
