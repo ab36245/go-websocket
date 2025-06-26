@@ -26,7 +26,7 @@ func (m Message) Text() string {
 }
 
 func (m Message) String() string {
-	return fmt.Sprintf("%s (%d bytes)", m.Kind, m.Data)
+	return fmt.Sprintf("%s (%d bytes) %v", m.Kind, len(m.Data), m.Data)
 }
 
 type MessageKind int
