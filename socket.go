@@ -17,6 +17,10 @@ func (s Socket) Close() error {
 	return nil
 }
 
+func (s Socket) LocalAddr() string {
+	return s.conn.LocalAddr().String()
+}
+
 func (s Socket) Read() (Message, error) {
 	type_, data, err := s.conn.ReadMessage()
 	if err != nil {
@@ -46,6 +50,10 @@ func (s Socket) Read() (Message, error) {
 		Kind: kind,
 		Data: data,
 	}, nil
+}
+
+func (s Socket) RemoteAddr() string {
+	return s.conn.RemoteAddr().String()
 }
 
 func (s Socket) Write(message Message) error {
